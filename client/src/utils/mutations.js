@@ -22,7 +22,7 @@ mutation addUser($username: String!, $password: String!, $email: String!) {
       username
       email
       photoCount
-      savedPhotos {
+      savedPhoto {
         authors
         photoId
         image
@@ -60,7 +60,7 @@ export const REMOVE_PHOTO = gql`
       _id
       username
       email
-      savedPhotos {
+      savedPhoto {
         photoId
         authors
         image
